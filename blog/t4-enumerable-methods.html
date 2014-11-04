@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog Template</title>
+	<link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+</head>
+<body>
+	<p>11/3/2014</p>
+	<h2>I don't really know what I'm talking about yet :(</h2>
+	<p>The method I am choosing to write about is .collect. Collect is (as far as I can tell) an alias for map. That is, I think they do the same thing. I can't really find anything online that suggests that they are not the same, and in the various code I've looked at on stack overflow they seem to do the same thing. All of that is pretty irrelevant, though, since I'm not writing about map.</p>
+
+<p>What it does is returns a new array (so it is not destructive!) that has as elements the results of running the code block on the original element. That's a mouth full, and it's hard to see what exactly is doing what, so I'm going to break it down a little bit. </p>
+<p><code># def separate_comma(number)
+#         number = number.to_s.chars.to_a
+#         number = number.reverse.each_slice(3).collect {|a| a.join('')}
+#         number.join(',').reverse
+# end</code>
+
+
+<p>This is a little snippet of code from a challenge I worked on this week. Whats actually going on here is collect is iterating through each element (a)i n the array I used it on and joining them together to form with '' so that they are right next to each other. The end result is that I end up with a string which is a joining of all the elements in the original array. </p>
+	<!--<ul>
+		<li><a href="insert path 1">first post goes here</a></li>
+		<li><a href="insert path 2">second post goes here</a></li>
+		<li><a href="insert path 3">third post goes here</a></li>
+	</ul>-->
+</body>
+
+

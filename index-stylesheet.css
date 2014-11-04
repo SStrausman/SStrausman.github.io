@@ -20,8 +20,7 @@ body {
 img.normal { 
 	height: 400px;
 	width: auto;
-	margin-left: 100px;
-	display: inline;
+	padding:15%;
 	border: solid black 5px;
 }
 link {
@@ -32,11 +31,23 @@ h3 {
 	margin: 0px auto auto auto
 }
 #first {
-	text-align: center;
-	margin: 0px 300px 0px 600px;
+	/*text-align: center;*/
+	/*margin: 0px 300px 0px 600px;*/
 	border: solid black 5px;
+	display: inline-block;
+	width: 60%;
+	/*float: right;*/
 
 }
-#second {
+/*#second {
 	margin: 0px 700px 0px 0px;
+}*/
+
+#portrait {
+	width: 30%;
+	display: inline-block;
+	/*display: inline-block;*/
+}
+#big {
+	display: table-cell; 
 }
