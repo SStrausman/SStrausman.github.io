@@ -65,10 +65,28 @@ body {
 	text-decoration: underline;
 }
 
+ul {
+  list-style-type: none;
+}
 
+.blogs {
+	float: left;
+	width: 35%;
+}
 
+a:link {
+    color: #788185;
+}
 
+/* visited link */
+a:visited {
+    color: #788185;
+}
 
+/* mouse over link */
+a:hover {
+    color: white;
+}
 
 
 
